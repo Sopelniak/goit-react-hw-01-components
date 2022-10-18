@@ -1,0 +1,37 @@
+.box {
+  height: calc(100% - 10px);
+  padding: 5px;
+  border: 2px solid rgb(50, 50, 50);
+  border-radius: 10px;
+  background-color: bisque;
+
+  .title {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .stat-list {
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-width: 100px;
+      padding: 5px;
+      border: 2px solid rgb(50, 50, 50);
+      border-radius: 10px;
+      background-color: rgb(221, 255, 244);
+      text-align: center;
+
+      .label {
+        font-weight: bold;
+      }
+    }
+  }
+}

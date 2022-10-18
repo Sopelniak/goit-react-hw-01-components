@@ -1,0 +1,48 @@
+.friend-list {
+  height: calc(100% - 40px);
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  border: 2px solid rgb(50, 50, 50);
+  border-radius: 10px;
+  background-color: rgb(221, 255, 244);
+
+  .friend-item {
+    padding: 5px 10px;
+    border: 2px solid rgb(50, 50, 50);
+    border-radius: 10px;
+    background-color: bisque;
+
+    .status {
+      color: green;
+    }
+
+    .status--off {
+      color: red;
+    }
+
+    .friend-box {
+      margin-top: 5px;
+      display: flex;
+      gap: 5px;
+
+      .avatar {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        border: 2px solid rgb(50, 50, 50);
+        border-radius: 50%;
+        padding: 3px;
+        background-color: white;
+      }
+
+      .name {
+        font-weight: bold;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: -2px;
+    }
+  }
+}

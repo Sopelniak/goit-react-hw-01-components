@@ -1,0 +1,38 @@
+table {
+  margin-top: 20px;
+  table-layout: fixed;
+  width: 100%;
+  border: 2px solid rgb(50, 50, 50);
+  border-radius: 10px;
+  background-color: bisque;
+  border-collapse: collapse;
+}
+thead {
+  background-color: rgb(221, 255, 244);
+}
+
+thead th:nth-child(2) {
+  width: 20%;
+}
+
+thead th:nth-child(3) {
+  width: 20%;
+}
+
+tbody td {
+  text-align: center;
+}
+
+tfoot th {
+  text-align: right;
+}
+
+th,
+td {
+  padding: 20px;
+}
+
+thead th,
+tbody td {
+  border: 1px solid rgb(50, 50, 50);
+}

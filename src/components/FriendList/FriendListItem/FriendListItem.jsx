@@ -4,13 +4,15 @@ export const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <>
       {isOnline ? (
-        <span class="status">online</span>
+        <span className="status">online</span>
       ) : (
-        <span class="status status--off">offline</span>
+        <span className="status status--off">offline</span>
       )}
 
-      <img class="avatar" src={avatar} alt="User avatar" width="48" />
-      <p class="name">{name}</p>
+      <div className="friend-box">
+        <img className="avatar" src={avatar} alt="User avatar" width="48" />
+        <p className="name">{name}</p>
+      </div>
     </>
   );
 };
