@@ -18,7 +18,7 @@ export const Profile = user => {
         <p className="location">{location}</p>
       </div>
 
-      <ul className="description stats">
+      <ul className="stats">
         <li>
           <span className="label">Followers </span>
           <span className="quantity">{followers}</span>

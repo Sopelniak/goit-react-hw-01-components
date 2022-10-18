@@ -37,12 +37,31 @@
     }
   }
 
-  .stats {
+  ul.stats {
+    padding: 0;
     list-style: none;
+    display: flex;
+    gap: 2px;
 
     li {
-      display: flex;
-      justify-content: space-between;
+      width: 65px;
+      padding: 5px;
+      border: 2px solid rgb(50, 50, 50);
+      border-radius: 10px;
+      background-color: bisque;
+      text-align: center;
+
+      span {
+        display: block;
+      }
+
+      .label {
+        font-size: 12px;
+      }
+
+      .quantity {
+        font-weight: bold;
+      }
     }
   }
 }
